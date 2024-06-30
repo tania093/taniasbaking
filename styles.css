@@ -1,0 +1,250 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Georgia, serif;
+    background-color: #f0f0f0;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #ffb6c1; /* Light pastel pink */
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Navigation */
+nav {
+    background-color: #ffb6c1; /* Light pastel pink */
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main sections */
+main {
+    padding: 20px;
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section:nth-child(even) {
+    background-color: #ffb6c1; /* Light pastel pink */
+}
+
+section:nth-child(odd) {
+    background-color: #ffb6c1; /* Light pastel pink */
+}
+
+/* Bake Along section */
+#bake-along {
+    background-color: #ffb6c1; /* Light pastel pink */
+    padding: 40px 20px;
+    font-size: 28px; /* Larger font size */
+}
+
+#bake-along p {
+    margin-bottom: 20px;
+}
+
+/* Recipe section */
+#recipe {
+    background-color: #4DDF79; /* Light green color */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    color: white; /* Text color */
+}
+
+#recipe h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+#recipe ul {
+    text-align: left;
+    margin-left: 20px;
+    list-style-type: none; /* Remove bullet points */
+}
+
+#recipe ul li {
+    margin-bottom: 8px;
+}
+
+/* Instructions section */
+#instructions {
+    background-color: #60F1A0; /* Light pastel green */
+    padding: 50px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+#instructions h3 {
+    font-size: 24px;
+    text-align: left; /* Align text to the left */
+    margin-bottom: 20px;
+}
+
+#instructions ol {
+    text-align: left; /* Align text to the left */
+    margin-left: 40px; /* Add left margin */
+    list-style: none; /* Remove bullet points */
+}
+
+#instructions ol li {
+    margin-bottom: 10px;
+}
+
+/* Images section */
+#images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffb6c1; /* Light pastel pink */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#images img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%; /* Circular images */
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+#images img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Leave Feedback form */
+#leave-feedback {
+    background-color: #98fb98; /* Light pastel green */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+    text-align: left;
+}
+
+#leave-feedback label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#leave-feedback input[type="text"],
+#leave-feedback textarea {
+    width: calc(100% - 16px); /* Adjusted width */
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#leave-feedback button {
+    background-color: #ffb6c1; /* Light pastel pink */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#leave-feedback button:hover {
+    background-color: #ff69b4; /* Darker pink on hover */
+}
+
+/* Follow Us section */
+#follow-us {
+    background-color: #ffb6c1; /* Light pastel pink */
+    padding: 40px 0;
+}
+
+#follow-us h2 {
+    font-size: 24px;
+}
+
+.social-icon {
+    display: inline-block;
+    font-size: 24px;
+    margin: 0 10px;
+    color: white;
+}
+
+.social-icon:hover {
+    color: #ff69b4; /* Darker pink on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #ffa07a; /* Salmon color */
+    color: white; /* Text color */
+    text-align: center;
+    padding: 10px;
+}
+
+/* Back to Top link */
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffb6c1; /* Light pastel pink */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+}
+
+.back-to-top:hover {
+    opacity: 0.8;
+}
+
+/* Simulate scroll to top behavior */
+:target:before {
+    content: '';
+    display: block;
+    height: 80px; /* Height of fixed header */
+    margin: -80px 0 0; /* Negative margin equal to height of fixed header */
+}
+
+
+
+
+
+
